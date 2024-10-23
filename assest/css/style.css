@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.m-10{
+    margin: 15rem;
+}
+.mr-10{
+    margin-right: 10rem;
+}
+
+.p-5{
+    padding: 10rem;
+}
+
+.navbar{
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgb(0,0, 0,0.1);
+}
