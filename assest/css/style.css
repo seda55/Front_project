@@ -1,22 +1,189 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-.m-10{
-    margin: 15rem;
-}
-.mr-10{
-    margin-right: 10rem;
-}
-
-.p-5{
-    padding: 10rem;
+header{
+    background-image: url(../image/narinci.webp) ;
+   height: 710px;
+   
+   background-repeat: no-repeat;
+   background-size: 100% auto;
 }
 
-.navbar{
+
+.custom-sticky-navbar {
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.nav-item {
+    padding: 0 15px;
+
+}
+.navbar .nav-link:hover{
+    color: orange;
+}
+
+.navbar {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.home {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+   
+}
+.dropdown-item{
+   color: orange !important ; 
+   
+}
+   .active{
+    color: orange !important; 
+    
+}
+.dropdown-item:hover{
+    background-color: orange !important;
+    color: white !important;
+}
+.container {
     max-width: 1200px;
     margin: 0 auto;
-    box-shadow: 0 10px 30px rgb(0,0, 0,0.1);
+}
+.cont{
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+}
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+
+.txt{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.txt h1 {
+    font-size: 60px;
+    font-weight: 700;
+    
+}
+.add-to-bag{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pozitiv{
+    background-color: orange;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    
+}
+.main{
+    background-color:whitesmoke;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 60px;
+    margin: 100px;
+    width: 100%;
+    max-width: 1100px;
+    align-items: center;
+}
+.dp{
+    display: flex;
+    flex-direction: row;
+
+}
+.icn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    text-align: center;
+    padding: 0 40px ;
+    border-right: 1px solid #ccc;
+
+}
+.icn:last-child{
+    border-right: none;
+}
+
+
+
+.custom-container {
+    max-width: 2500px; /* Maksimum genişlik */
+    width: 100%;
+    margin: 0 auto; /* Ortalar */
+    padding: 20px; /* İçerik etrafında boşluk */
+    
+}
+
+.custom-row {
+    display: flex;
+     /* Satırlar dolunca aşağıya geçer */
+    gap: 20px; /* Kolonlar arası boşluk */
+    display: flex;
+
+}
+
+.inner-row {
+    display: grid;
+   iiiiiiiiiiiiii
+   
+    gap: 20px; /* İç kolonlar arası boşluk */
+}
+
+.large-col, .small-col, .side-col {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+}
+
+.large-col img, .small-col img, .side-col img {
+    width: 100%; /* Resimleri tam genişlikte tutar */
+    height: auto; /* Yükseklik oranı korunur */
+    display: block;
+    border-radius: 10px;
+}
+
+/* Side col için özel stil */
+.side-col {
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive için media query */
+@media (max-width: 768px) {
+    .custom-row, .inner-row {
+        flex-direction: column; /* Mobilde sütunlar dikey olur */
+    }
+
+    .large-col, .small-col, .side-col {
+        margin-bottom: 20px;
+    }
 }
