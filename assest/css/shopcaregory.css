@@ -5,7 +5,7 @@
 }
 header{
     background-image: url(../image/narinci.webp) ;
-   height: 710px;
+   height: 600px;
    
    background-repeat: no-repeat;
    background-size: 100% auto;
@@ -16,7 +16,7 @@ header{
     position: -webkit-sticky; 
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 2000px;
     width: 100%;
 }
 
@@ -37,10 +37,7 @@ header{
    color: orange !important ; 
    
 }
-   .active{
-    color: orange !important; 
-    
-}
+   
 .dropdown-item:hover{
     background-color: orange !important;
     color: white !important;
@@ -52,4 +49,192 @@ header{
 
 .dropdown-toggle::after {
     display: none !important;
+}
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.containerr {
+    width: 90%;
+    margin: 0 auto;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 15px;
+    min-width: 200px;
+}
+
+.footer h5 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer p {
+    color: #aaaaaa;
+    margin-bottom: 15px;
+}
+
+.newsletter-form {
+    display: flex;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 5px;
+    flex-grow: 1;
+}
+
+.newsletter-form button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 15px;
+    color: #333;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.newsletter-form button:hover {
+    background-color: #ff9900;
+}
+
+.instagram-feed {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.instagram-feed img {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+}
+
+.social-icons a {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #aaaaaa;
+    text-decoration: none;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #555;
+    border-radius: 50%;
+}
+
+.social-icons a:hover {
+    background-color: #ffcc00;
+    color: #333;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    color: #aaaaaa;
+}
+
+.footer-bottom span {
+    color: #ffcc00;
+}
+.text{
+    margin-left: 600px;
+    margin-top: 100px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+   color: white;
+}
+
+.browse h4{
+    background-color: rgb(125, 113, 204);
+    font-size: 25px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: white;
+}
+
+.shop-continer{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+.browse p:hover{
+    color: orange;
+}
+.right{
+    width:20%;
+    text-align: center;
+    padding-top: 10px;
+    height: 100%;
+}
+
+span{
+    color: #555;
+}
+.product h4{
+    background-color: rgb(125, 113, 204);
+    font-size: 25px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: white;
+}
+.brands li{
+    list-style: none;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+    display: flex;
+    
+}
+.brands h5{
+    margin-right: 100px;
+}
+.brands{
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+};
+div.color {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+.product{
+    height: 100%;
+}
+
+.color li{
+    list-style: none;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+    display: flex;
+    
 }

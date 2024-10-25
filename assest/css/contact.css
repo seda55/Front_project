@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-image: url(../image/narinci.webp) ;
+   height: 600px;
+   
+   background-repeat: no-repeat;
+   background-size: 100% auto;
+}
+
+
+.custom-sticky-navbar {
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    z-index: 2000px;
+    width: 100%;
+}
+
+.nav-item {
+    padding: 0 15px;
+
+}
+.navbar .nav-link:hover{
+    color: orange;
+}
+
+.navbar {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+.dropdown-item{
+    color: orange !important ; 
+    
+ }
+    .active{
+     color: orange !important; 
+     
+ }
+ .dropdown-item:hover{
+     background-color: orange !important;
+     color: white !important;
+ }
+ .container {
+     max-width: 1200px;
+     margin: 0 auto;
+ }
+ 
+ .dropdown-toggle::after {
+     display: none !important;
+ }
+ 
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.containerr {
+    width: 90%;
+    margin: 0 auto;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 15px;
+    min-width: 200px;
+}
+
+.footer h5 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer p {
+    color: #aaaaaa;
+    margin-bottom: 15px;
+}

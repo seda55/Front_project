@@ -306,3 +306,12 @@ main{
 .footer-bottom span {
     color: #ffcc00;
 }
+.gr-4{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+    max-width: 1200px;
+}
+.m-6{
+    margin: 0 auto !important;
+}
