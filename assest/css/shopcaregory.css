@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-image: url(../image/narinci.webp) ;
+   height: 710px;
+   
+   background-repeat: no-repeat;
+   background-size: 100% auto;
+}
+
+
+.custom-sticky-navbar {
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.nav-item {
+    padding: 0 15px;
+
+}
+.navbar .nav-link:hover{
+    color: orange;
+}
+
+.navbar {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+.dropdown-item{
+   color: orange !important ; 
+   
+}
+   .active{
+    color: orange !important; 
+    
+}
+.dropdown-item:hover{
+    background-color: orange !important;
+    color: white !important;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
