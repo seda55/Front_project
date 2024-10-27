@@ -52,6 +52,345 @@ header{
 }
 
 
+
+
+.text{
+    margin-left: 600px;
+    margin-top: 100px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+   color: white;
+}
+
+.browse h4{
+    background-color: rgb(125, 113, 204);
+    font-size: 25px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: white;
+}
+
+.shop-continer{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 100px auto;
+
+    
+}
+.browse p:hover{
+    color: orange;
+}
+.right{
+    width:20%;
+    text-align: center;
+    padding-top: 10px;
+    height: 100%;
+    
+}
+
+span{
+    color: #555;
+}
+.product h4{
+    background-color: rgb(125, 113, 204);
+    font-size: 25px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: white;
+}
+.brands li{
+    list-style: none;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+    display: flex;
+    
+}
+.brands h5{
+    margin-right: 100px;
+}
+.brands{
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+};
+div.color {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+.product{
+    height: 100%;
+}
+
+.color li{
+    list-style: none;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+    display: flex;
+    
+}
+
+
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1500px;
+   
+}
+
+.shopnav{
+   
+    width: 100%;
+    max-width: 1000px;
+}
+
+.custom-navbar {
+    background-color: #7D83A6;
+    padding: 15px;
+    width: 100%;
+    
+  }
+  .custom-navbar1 {
+    background-color: #7D83A6;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+  }
+  .pagination .page-item.active .page-link {
+    background: linear-gradient(to right, #ff7e00, #ffc107);
+    color: white;
+    border: none;
+  }
+  .card {
+    border: none;
+    background-color: #7D83A6;
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  .product-title {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .product-price {
+    text-align: center;
+    color: #333;
+  }
+  .original-price {
+    text-decoration: line-through;
+    color: #aaa;
+    font-size: 0.9rem;
+  }
+  .icons {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .icons i {
+    margin: 0 5px;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  .form-control{
+    display: flex;
+    width: 100%;
+    max-width: 200px;
+
+  }
+  .form-group{
+    display: flex;
+  }
+
+
+.card-body{
+    background-color: white;
+}
+
+
+
+.pricee p{
+    margin-top: 50px;
+    width: 300px;
+}
+.page-link{
+    color: black;
+}
+
+.page-link:hover{
+    background-color:#ff9900;
+    color: white;
+}
+.deals-container h2{
+    margin-left: 600px;
+}
+.deals-description{
+    margin-left: 500px;
+    width: 600px;
+    margin-bottom: 50px;
+}
+
+.deals-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 80%;
+    max-width: 1000px;
+    align-items: center;
+    margin-left: 300px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Üç sütun yapısı */
+    gap: 20px;
+    flex: 3;
+}
+
+.product-card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    text-align: left;
+    display: flex;
+    
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 1em;
+    color: #333;
+    margin: 5px 0;
+}
+
+.product-card .price {
+    font-size: 1.2em;
+    color: #333;
+    display: flex;
+    flex-direction: column ;
+}
+
+.product-card .old-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-left: 10px;
+}
+
+/* Black Friday Afişi */
+.black-friday-banner {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.black-friday-banner img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Responsive Ayarları */
+@media (max-width: 992px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr); /* Orta ekranlarda iki sütun */
+    }
+}
+
+@media (max-width: 768px) {
+    .deals-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .products {
+        grid-template-columns: 1fr; /* Küçük ekranlarda tek sütun */
+    }
+
+    .black-friday-banner {
+        margin-top: 20px;
+    }
+}
+
+.icons svg{
+    background: 1px solid #7D83A6;
+    background-color: #7D83A6;
+    border-radius: 10px;
+    color: white;
+}
+
+
+
+.button-container {
+    display: inline-flex;
+    align-items: center;
+}
+
+.add-to-bag-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+}
+
+/* Düyməyə basıldığında arxa fonu dəyişir */
+.add-to-bag-btn:active {
+    background-color: #ff9800;
+    color: white;
+    transform: scale(1.2);
+}
+.add-to-bag-btn:focus {
+    background-color: #ff9800;
+    color: white;
+    transform: scale(1.2);
+    outline: none; /* Fokus effektini göstərmək istəmirsinizsə */
+}
+/* Başlanğıcda mətn gizlidir */
+.label {
+    display: none;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff9800;
+    transition: opacity 0.7s;
+}
+
+/* Düyməyə basıldığında mətni göstərir */
+.add-to-bag-btn:active + .label {
+    display: inline;
+    opacity: 1;
+}
+
+.add-to-bag-btn:focus + .label {
+    display: inline;
+    opacity: 1;
+}
+
+
+
 .footer {
     background-color: #333;
     color: #fff;
@@ -158,83 +497,4 @@ header{
 
 .footer-bottom span {
     color: #ffcc00;
-}
-.text{
-    margin-left: 600px;
-    margin-top: 100px;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-   color: white;
-}
-
-.browse h4{
-    background-color: rgb(125, 113, 204);
-    font-size: 25px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    color: white;
-}
-
-.shop-continer{
-    width: 100%;
-    display: flex;
-    gap: 50px;
-    max-width: 1200px;
-    margin: 0 auto;
-    
-}
-.browse p:hover{
-    color: orange;
-}
-.right{
-    width:20%;
-    text-align: center;
-    padding-top: 10px;
-    height: 100%;
-}
-
-span{
-    color: #555;
-}
-.product h4{
-    background-color: rgb(125, 113, 204);
-    font-size: 25px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    color: white;
-}
-.brands li{
-    list-style: none;
-  gap: 20px;
-  justify-content: center;
-  margin-bottom: 20px;
-    display: flex;
-    
-}
-.brands h5{
-    margin-right: 100px;
-}
-.brands{
-    display: flex;
-    flex-direction: column;
-    gap: 20px
-};
-div.color {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px
-}
-.product{
-    height: 100%;
-}
-
-.color li{
-    list-style: none;
-  gap: 20px;
-  justify-content: center;
-  margin-bottom: 20px;
-    display: flex;
-    
 }

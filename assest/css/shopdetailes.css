@@ -43,7 +43,286 @@ header{
      background-color: orange !important;
      color: white !important;
  }
+
+
+
  .container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 100px auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+}
+
+.product-image {
+    background-color: #c6cde5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    flex: 1;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-details {
+    flex: 1;
+    padding: 30px;
+}
+
+.product-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 24px;
+    color: #ff9800;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.product-info {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.quantity-container label {
+    margin-right: 10px;
+    color: #333;
+}
+
+.quantity-container input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.buttons-container {
+    display: flex;
+    align-items: center;
+}
+
+.add-to-cart-btn {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #e68900;
+}
+
+.icon-btn {
+    background-color: #c6cde5;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.icon-btn:hover {
+    background-color: #a4b0cf;
+}
+
+
+
+.tab-navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #e8f0f4;
+    padding: 10px;
+  }
+
+  .tab-navbar .tab {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    text-align: center;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .tab-navbar .tab:hover {
+    background-color: #f3f3f3;
+  }
+
+  /* Aktif sekme için stil */
+  .tab-navbar .active {
+    background: linear-gradient(to right, #ff7f00, #ffbb33);
+    color: #fff;
+    font-weight: bold;
+  }
+.review-container {
+    display: flex;
+    gap: 50px;
+    
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 300px;
+  }
+
+  .review-page{
+   
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .summary, .review-list, .review-form {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+  }
+
+  .summary {
+    width: 40%;
+    text-align: center;
+    background-color: #666;
+    display: flex;
+    height: 300px;
+  }
+
+  .summary h1 {
+    font-size: 3em;
+    color: #ff7f00;
+  }
+
+  .summary p {
+    color: #888;
+  }
+
+  .review-list, .review-form {
+    width: 35%;
+  }
+
+  .review-list .review {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .review img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .review-info h4 {
+    margin: 0;
+  }
+
+  .review-info p {
+    color: #666;
+  }
+
+  .review-form input, .review-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  .review{
+margin-left: 300px;
+    background-color: white;
+
+    
+  }
+
+  .review-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff7f00;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .review-form button:hover {
+    background-color: #e57200;
+  }
+
+  .stars {
+    color: #FFD700;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .containers {
      max-width: 1200px;
      margin: 0 auto;
  }
@@ -52,6 +331,131 @@ header{
      display: none !important;
  }
  
+ .deals-container h2{
+    margin-left: 600px;
+}
+.deals-description{
+    margin-left: 500px;
+    width: 600px;
+    margin-bottom: 50px;
+}
+
+.deals-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 80%;
+    max-width: 1000px;
+    align-items: center;
+    margin-left: 300px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Üç sütun yapısı */
+    gap: 20px;
+    flex: 3;
+}
+
+.product-card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    text-align: left;
+    display: flex;
+    
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 1em;
+    color: #333;
+    margin: 5px 0;
+}
+
+.product-card .price {
+    font-size: 1.2em;
+    color: #333;
+    display: flex;
+    flex-direction: column ;
+}
+
+.product-card .old-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-left: 10px;
+}
+
+/* Black Friday Afişi */
+.black-friday-banner {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.black-friday-banner img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Responsive Ayarları */
+@media (max-width: 992px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr); /* Orta ekranlarda iki sütun */
+    }
+}
+
+@media (max-width: 768px) {
+    .deals-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .products {
+        grid-template-columns: 1fr; /* Küçük ekranlarda tek sütun */
+    }
+
+    .black-friday-banner {
+        margin-top: 20px;
+    }
+}
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .footer {
     background-color: #333;
     color: #fff;

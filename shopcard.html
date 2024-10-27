@@ -21,7 +21,7 @@
               <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item text-orange" >
-                    <a class="nav-link active  " aria-current="page" href="#">Home</a>
+                    <a class="nav-link active  " aria-current="page" href="./index.html">Home</a>
                   </li>
                  
                   <li class="nav-item dropdown">
@@ -29,10 +29,10 @@
                       Shop
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Shop Category</a></li>
-                        <li><a class="dropdown-item" href="#">Product Details</a></li>
+                        <li><a class="dropdown-item" href="./shopcaregory.html">Shop Category</a></li>
+                        <li><a class="dropdown-item" href="./shopdetails.html">Product Details</a></li>
                         <li><a class="dropdown-item" href="#">Product Checkout</a></li>
-                        <li><a class="dropdown-item" href="#">Shopimg Cart</a></li>
+                        <li><a class="dropdown-item" href="./shopcard.html">Shopimg Cart</a></li>
                         <li><a class="dropdown-item" href="#">Confirmation</a></li>
                     </ul>
                     
@@ -42,8 +42,8 @@
                       Blog
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Blog </a></li>
-                        <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                        <li><a class="dropdown-item" href="./blog.html">Blog </a></li>
+                        <li><a class="dropdown-item" href="./blogdetails.html">Blog Details</a></li>
                     </ul>
                     
                   </li>
@@ -52,14 +52,14 @@
                       Pages
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Login</a></li>
+                      <li><a class="dropdown-item" href="./plogin.html">Login</a></li>
                       <li><a class="dropdown-item" href="#">Tracking</a></li>
                       <li><a class="dropdown-item" href="#">Elements</a></li>
                     </ul>
                     
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="./contact.html">Contact</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
@@ -78,6 +78,160 @@
             </div>
           </nav>
         </header>
+
+
+
+
+        <div class="container">
+          <!-- Cart Header -->
+          <div class="cart-header">
+            <div class="cart-item-info">Product</div>
+            <div class="cart-item-price">Price</div>
+            <div class="cart-item-quantity">Quantity</div>
+            <div class="cart-item-total">Total</div>
+          </div>
+        
+          <!-- Cart Item -->
+          <div class="cart-item">
+            <img src="./assest/image/shopcard.webp" alt="Product Image">
+            <div class="cart-item-info">
+              <p>Minimalistic shop for multipurpose use</p>
+            </div>
+            <div class="cart-item-price">$360.00</div>
+            <div class="cart-item-quantity">
+              <input type="number" class="quantity-input" value="1">
+            </div>
+            <div class="cart-item-total">$720.00</div>
+          </div>
+        
+          <div class="cart-item">
+            <img src="./assest/image/shopcard.webp" alt="Product Image">
+            <div class="cart-item-info">
+              <p>Minimalistic shop for multipurpose use</p>
+            </div>
+            <div class="cart-item-price">$360.00</div>
+            <div class="cart-item-quantity">
+              <input type="number" class="quantity-input" value="1">
+            </div>
+            <div class="cart-item-total">$720.00</div>
+          </div>
+        
+          <div class="cart-item">
+            <img src="./assest/image/shopcard.webp" alt="Product Image">
+            <div class="cart-item-info">
+              <p>Minimalistic shop for multipurpose use</p>
+            </div>
+            <div class="cart-item-price">$360.00</div>
+            <div class="cart-item-quantity">
+              <input type="number" class="quantity-input" value="1">
+            </div>
+            <div class="cart-item-total">$720.00</div>
+          </div>
+        
+          <!-- Cart Footer -->
+          <div class="cart-footer">
+            <button class="btn btn-update">UPDATE CART</button>
+            <div>
+              <input type="text" placeholder="Coupon Code" style="padding: 5px; border: 1px solid #ddd; border-radius: 5px;">
+              <button class="btn btn-apply">APPLY</button>
+              <button class="btn btn-close">CLOSE COUPON</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="containerc">
+          <!-- Summary Section -->
+          <div class="summary-section">
+            <!-- Subtotal -->
+            <div class="summary-item subtotal">
+              <h2>Subtotal</h2>
+              <p>$2160.00</p>
+            </div>
+        <hr>
+            <!-- Shipping Options -->
+            <div class="summary-item shipping-options">
+              <h2>Shipping</h2>
+              <label>
+                <input type="radio" name="shipping" value="5"> Flat Rate: $5.00
+              </label>
+              <label>
+                <input type="radio" name="shipping" value="0"> Free Shipping
+              </label>
+              <label>
+                <input type="radio" name="shipping" value="10"> Flat Rate: $10.00
+              </label>
+              <label>
+                <input type="radio" name="shipping" value="2" checked> Local Delivery: $2.00
+              </label>
+            </div>
+          </div>
+        
+          <!-- Calculate Shipping Section -->
+          <div class="calculate-shipping">
+            <h3>Calculate Shipping</h3>
+            <form>
+              <select name="country">
+                <option>Bangladesh</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>Australia</option>
+              </select>
+              <select name="state">
+                <option>Select a State</option>
+                <option>California</option>
+                <option>Texas</option>
+                <option>New York</option>
+              </select>
+              <input type="text" placeholder="Postcode/Zipcode">
+              <button class="btn-update-details">UPDATE DETAILS</button>
+            </form>
+          </div>
+        </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <footer class="footer">
             <div class="containerr">
                 <div class="footer-section">

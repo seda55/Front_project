@@ -238,9 +238,9 @@ main {
 }
 
 .inner-row {
-    display: grid;
-    grid-template-columns: max-content;
-    grid-template-rows: max-content;
+   display: flex;
+   flex-wrap: wrap;
+   
 }
 
 .large-col, .small-col, .side-col {
@@ -252,9 +252,11 @@ main {
 
 .large-col img, .small-col img, .side-col img {
     width: 100%; /* Resimleri tam genişlikte tutar */
-    height: auto; /* Yükseklik oranı korunur */
+    height: 100%; /* Yükseklik oranı korunur */
     display: block;
     border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .side-col {
@@ -286,6 +288,376 @@ main {
         max-width: 100%;
     }
 }
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .card {
+      max-width: 100%; /* Make cards take full width on smaller screens */
+    }
+  }
+
+
+
+  .deal-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Countdown section styling */
+.deal-countdown {
+    color: white;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../image/exclusive.jpg.webp);
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.deal-countdown h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.deal-countdown p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.time-box {
+    background: white;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.time {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.label {
+    font-size: 0.8rem;
+}
+
+.shop-now-btn {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Product showcase section styling */
+.product-showcase {
+    text-align: center;
+    max-width: 400px;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.product-image {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product-info {
+    text-align: center;
+}
+
+.price {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.current-price {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+    margin-left: 5px;
+}
+
+.add-to-bag-btn {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.labels-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+/* Each Label Card Styling */
+.label-card {
+   
+    
+    padding: 20px 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 1 1 200px; /* Makes each card responsive */
+    max-width: 250px;
+    opacity: 0.6;
+}
+
+/* Hover Effect */
+.label-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+.label-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.label-card p {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+
+/* Responsive Stacking */
+@media (max-width: 768px) {
+    .labels-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+/* Genel Ayarlar */
+.deals-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.deals-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.deals-description {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Ürün Kartları */
+.deals-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Üç sütun yapısı */
+    gap: 20px;
+    flex: 3;
+}
+
+.product-card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+    text-align: left;
+    display: flex;
+    
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 1em;
+    color: #333;
+    margin: 5px 0;
+}
+
+.product-card .price {
+    font-size: 1.2em;
+    color: #333;
+    display: flex;
+    flex-direction: column ;
+}
+
+.product-card .old-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-left: 10px;
+}
+
+/* Black Friday Afişi */
+.black-friday-banner {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.black-friday-banner img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Responsive Ayarları */
+@media (max-width: 992px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr); /* Orta ekranlarda iki sütun */
+    }
+}
+
+@media (max-width: 768px) {
+    .deals-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .products {
+        grid-template-columns: 1fr; /* Küçük ekranlarda tek sütun */
+    }
+
+    .black-friday-banner {
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Footer Styles */
 .footer {
     background-color: #333;
@@ -384,7 +756,12 @@ main {
     background-color: #ffcc00;
     color: #333;
 }
-
+.icon svg{
+    border: 2px solid rgb(62, 109, 180);
+    background-color:rgb(62, 109, 180);
+    border-radius: 50px;
+    color: white;
+}
 .footer-bottom {
     text-align: center;
     margin-top: 30px;
@@ -402,4 +779,43 @@ main {
 }
 .m-6{
     margin: 0 auto !important;
+}
+
+
+.latest-products {
+    text-align: center;
+    padding: 20px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.navigation .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.navigation .prev, .navigation .next {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navigation .prev .text, .navigation .next .text {
+    font-weight: bold;
+    color: #bbb;
+    margin: 0 5px;
+}
+
+.description {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #777;
 }

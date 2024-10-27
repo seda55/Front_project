@@ -32,7 +32,7 @@
                         <li><a class="dropdown-item " href="./shopcaregory.html">Shop Category</a></li>
                         <li><a class="dropdown-item" href="./shopdetails.html">Product Details</a></li>
                         <li><a class="dropdown-item" href="#">Product Checkout</a></li>
-                        <li><a class="dropdown-item" href="#">Shopimg Cart</a></li>
+                        <li><a class="dropdown-item" href="./shopcard.html">Shopimg Cart</a></li>
                         <li><a class="dropdown-item" href="#">Confirmation</a></li>
                     </ul>
                     
@@ -42,8 +42,8 @@
                       Blog
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Blog </a></li>
-                        <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                        <li><a class="dropdown-item" href="./blog.html">Blog </a></li>
+                        <li><a class="dropdown-item" href="./blogdetails.html">Blog Details</a></li>
                     </ul>
                     
                   </li>
@@ -52,14 +52,14 @@
                       Pages
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Login</a></li>
+                      <li><a class="dropdown-item" href="./plogin.html">Login</a></li>
                       <li><a class="dropdown-item" href="#">Tracking</a></li>
                       <li><a class="dropdown-item" href="#">Elements</a></li>
                     </ul>
                     
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="./contact.html">Contact</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
@@ -139,13 +139,503 @@
   <li><input type="radio">Samsung(19)</li>
   </ul>
 </div>
+<div class="pricee">
+  <h5>Price </h5>
+  <p>Price:
+   <span> $
+    500.00
+    to
+    $
+    4000.00</span></p>
+</div>
       </div>
     </div>
     <div class="left">
-      <div class="shopnav"></div>
-      <div class="cards"></div>
+      <div class="shopnav">
+        <div class="container-fluid custom-navbar">
+          <div class="row justify-content-between align-items-center">
+            <!-- Dropdown Menüler -->
+            <div class="col-auto">
+              <div class="form-group d-inline-block">
+                <select class="form-control">
+                  <option>Default sorting</option>
+                  <option>Sort by popularity</option>
+                  <option>Sort by average rating</option>
+                  <option>Sort by latest</option>
+                  <option>Sort by price: low to high</option>
+                  <option>Sort by price: high to low</option>
+                </select>
+              </div>
+              <div class="form-group d-inline-block">
+                <select class="form-control">
+                  <option>Show 12</option>
+                  <option>Show 24</option>
+                  <option>Show 48</option>
+                </select>
+              </div>
+            </div>
+        
+            <!-- Sayfa Numaralandırma (Pagination) -->
+            <div class="col-auto">
+              <nav>
+                <ul class="pagination mb-0">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item "><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item disabled"><span class="page-link">...</span></li>
+                  <li class="page-item"><a class="page-link" href="#">6</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="container mt-5">
+          <div class="row">
+            <!-- 6 kart oluşturuluyor -->
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="card">
+                <img src="./assest/image/crd1.webp" class="card-img-top" alt="Product 1">
+                <div class="card-body">
+                  <h5 class="product-title">ADIDAS NEW HAMMER SOLE FOR SPORTS PERSON</h5>
+                  <p class="product-price">$150.00 <span class="original-price">$210.00</span></p>
+                  <div class="icons ">
+                    <div class="button-container">
+                      <button class="add-to-bag-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-bag-dash" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M5.5 10a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5"/>
+                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                      </svg></button>
+                      <span class="label">Add to Bag</span>
+                      </div>
+                      <div class="button-container">
+                        <button class="add-to-bag-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                      </svg></button>
+                      <span class="label">Wishlist</span>
+                      </div>
+                      <div class="button-container">
+                        <button class="add-to-bag-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                        <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9"/>
+                        <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z"/>
+                      </svg></button>
+                      <span class="label">Compare</span>
+                      </div>
+                
+                      <div class="button-container">
+                        <button class="add-to-bag-btn">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrows-move" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10M.146 8.354a.5.5 0 0 1 0-.708l2-2a.5.5 0 1 1 .708.708L1.707 7.5H5.5a.5.5 0 0 1 0 1H1.707l1.147 1.146a.5.5 0 0 1-.708.708zM10 8a.5.5 0 0 1 .5-.5h3.793l-1.147-1.146a.5.5 0 0 1 .708-.708l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L14.293 8.5H10.5A.5.5 0 0 1 10 8"/>
+                          </svg>
+                          <span class="label">View More</span>
+                        </button>
+                      </div>
+                
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="card">
+                <img src="./assest/image/crd2.webp" class="card-img-top" alt="Product 2">
+                <div class="card-body">
+                  <h5 class="product-title">ADIDAS NEW HAMMER SOLE FOR SPORTS PERSON</h5>
+                  <p class="product-price">$150.00 <span class="original-price">$210.00</span></p>
+                  
+                    <div class="icons ">
+                      <div class="button-container">
+                        <button class="add-to-bag-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-bag-dash" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M5.5 10a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5"/>
+                          <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                        </svg></button>
+                        <span class="label">Add to Bag</span>
+                        </div>
+                        <div class="button-container">
+                          <button class="add-to-bag-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                          <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                        </svg></button>
+                        <span class="label">Wishlist</span>
+                        </div>
+                        <div class="button-container">
+                          <button class="add-to-bag-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                          <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9"/>
+                          <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z"/>
+                        </svg></button>
+                        <span class="label">Compare</span>
+                        </div>
+                        <div class="button-container">
+                          <button class="add-to-bag-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrows-move" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10M.146 8.354a.5.5 0 0 1 0-.708l2-2a.5.5 0 1 1 .708.708L1.707 7.5H5.5a.5.5 0 0 1 0 1H1.707l1.147 1.146a.5.5 0 0 1-.708.708zM10 8a.5.5 0 0 1 .5-.5h3.793l-1.147-1.146a.5.5 0 0 1 .708-.708l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L14.293 8.5H10.5A.5.5 0 0 1 10 8"/>
+                            </svg>
+                            <span class="label">View More</span>
+                          </button>
+                        </div>
+                  
+               
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="card">
+                <img src="./assest/image/crd3.webp" class="card-img-top" alt="Product 3">
+                <div class="card-body">
+                  <h5 class="product-title">ADIDAS NEW HAMMER SOLE FOR SPORTS PERSON</h5>
+                  <p class="product-price">$150.00 <span class="original-price">$210.00</span></p>
+                  <div class="icons ">
+                    <div class="button-container">
+                      <button class="add-to-bag-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-bag-dash" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M5.5 10a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5"/>
+                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                      </svg></button>
+                      <span class="label">Add to Bag</span>
+                      </div>
+                      <div class="button-container">
+                        <button class="add-to-bag-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                      </svg></button>
+                      <span class="label">Wishlist</span>
+                      </div>
+                      <div class="button-container">
+                        <button class="add-to-bag-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                        <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9"/>
+                        <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z"/>
+                      </svg></button>
+                      <span class="label">Compare</span>
+                      </div>
+                
+                      <div class="button-container">
+                        <button class="add-to-bag-btn">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrows-move" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10M.146 8.354a.5.5 0 0 1 0-.708l2-2a.5.5 0 1 1 .708.708L1.707 7.5H5.5a.5.5 0 0 1 0 1H1.707l1.147 1.146a.5.5 0 0 1-.708.708zM10 8a.5.5 0 0 1 .5-.5h3.793l-1.147-1.146a.5.5 0 0 1 .708-.708l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L14.293 8.5H10.5A.5.5 0 0 1 10 8"/>
+                          </svg>
+                          <span class="label">View More</span>
+                        </button>
+                      </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="card">
+                <img src="./assest/image/crd4.webp" class="card-img-top" alt="Product 4">
+                <div class="card-body">
+                  <h5 class="product-title">ADIDAS NEW HAMMER SOLE FOR SPORTS PERSON</h5>
+                  <p class="product-price">$150.00 <span class="original-price">$210.00</span></p>
+                  <div class="icons ">
+                    <div class="button-container">
+                      <button class="add-to-bag-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-bag-dash" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M5.5 10a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5"/>
+                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                      </svg></button>
+                      <span class="label">Add to Bag</span>
+                      </div>
+                      <div class="button-container">
+                        <button class="add-to-bag-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                      </svg></button>
+                      <span class="label">Wishlist</span>
+                      </div>
+                      <div class="button-container">
+                        <button class="add-to-bag-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                        <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9"/>
+                        <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z"/>
+                      </svg></button>
+                      <span class="label">Compare</span>
+                      </div>
+                      <div class="button-container">
+                        <button class="add-to-bag-btn">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrows-move" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10M.146 8.354a.5.5 0 0 1 0-.708l2-2a.5.5 0 1 1 .708.708L1.707 7.5H5.5a.5.5 0 0 1 0 1H1.707l1.147 1.146a.5.5 0 0 1-.708.708zM10 8a.5.5 0 0 1 .5-.5h3.793l-1.147-1.146a.5.5 0 0 1 .708-.708l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L14.293 8.5H10.5A.5.5 0 0 1 10 8"/>
+                          </svg>
+                          <span class="label">View More</span>
+                        </button>
+                      </div>
+                
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="card">
+                <img src="./assest/image/crd5.webp
+                " class="card-img-top" alt="Product 5">
+                <div class="card-body">
+                  <h5 class="product-title">ADIDAS NEW HAMMER SOLE FOR SPORTS PERSON</h5>
+                  <p class="product-price">$150.00 <span class="original-price">$210.00</span></p>
+                  <div class="icons ">
+                    <div class="button-container">
+                      <button class="add-to-bag-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-bag-dash" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M5.5 10a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5"/>
+                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                      </svg></button>
+                      <span class="label">Add to Bag</span>
+                      </div>
+                      <div class="button-container">
+                        <button class="add-to-bag-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                      </svg></button>
+                      <span class="label">Wishlist</span>
+                      </div>
+                      <div class="button-container">
+                        <button class="add-to-bag-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                        <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9"/>
+                        <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z"/>
+                      </svg></button>
+                      <span class="label">Compare</span>
+                      </div>
+                
+                      <div class="button-container">
+                        <button class="add-to-bag-btn">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrows-move" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10M.146 8.354a.5.5 0 0 1 0-.708l2-2a.5.5 0 1 1 .708.708L1.707 7.5H5.5a.5.5 0 0 1 0 1H1.707l1.147 1.146a.5.5 0 0 1-.708.708zM10 8a.5.5 0 0 1 .5-.5h3.793l-1.147-1.146a.5.5 0 0 1 .708-.708l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L14.293 8.5H10.5A.5.5 0 0 1 10 8"/>
+                          </svg>
+                          <span class="label">View More</span>
+                        </button>
+                      </div>
+                
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="card">
+                <img src="./assest/image/crd6.webp" class="card-img-top" alt="Product 6">
+                <div class="card-body">
+                  <h5 class="product-title">ADIDAS NEW HAMMER SOLE FOR SPORTS PERSON</h5>
+                  <p class="product-price">$150.00 <span class="original-price">$210.00</span></p>
+                  <div class="icons ">
+                    <div class="button-container">
+                    <button class="add-to-bag-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-bag-dash" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M5.5 10a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5"/>
+                      <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                    </svg></button>
+                    <span class="label">Add to Bag</span>
+                    </div>
+                    <div class="button-container">
+                      <button class="add-to-bag-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                      <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                    </svg></button>
+                    <span class="label">Wishlist</span>
+                    </div>
+                    <div class="button-container">
+                      <button class="add-to-bag-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                      <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9"/>
+                      <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z"/>
+                    </svg></button>
+                    <span class="label">Compare</span>
+                    </div>
+                <div class="button-container">
+                  <button class="add-to-bag-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrows-move" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10M.146 8.354a.5.5 0 0 1 0-.708l2-2a.5.5 0 1 1 .708.708L1.707 7.5H5.5a.5.5 0 0 1 0 1H1.707l1.147 1.146a.5.5 0 0 1-.708.708zM10 8a.5.5 0 0 1 .5-.5h3.793l-1.147-1.146a.5.5 0 0 1 .708-.708l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L14.293 8.5H10.5A.5.5 0 0 1 10 8"/>
+                    </svg>
+                    <span class="label">View More</span>
+                  </button>
+                </div>
+                
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shopnav">
+        <div class="container-fluid custom-navbar1">
+          <div class="row justify-content-between align-items-center">
+            <!-- Dropdown Menüler -->
+            
+              <div class="form-group d-inline">
+                <select class="form-control d-inline">
+                  <option>Show 12</option>
+                  <option>Show 24</option>
+                  <option>Show 48</option>
+                </select>
+              </div>
+            </div>
+        
+            <!-- Sayfa Numaralandırma (Pagination) -->
+            <div class="col-auto">
+              <nav>
+                <ul class="pagination mb-0">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item disabled"><span class="page-link">...</span></li>
+                  <li class="page-item"><a class="page-link" href="#">6</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+   
     </div>
+    
    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <div class="deals-container">
+    <h2 class="deals-title">Deals of the Week</h2>
+    <p class="deals-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  
+    <div class="deals-content">
+      <div class="products">
+        <!-- Ürünlerin her biri için bir ürün kartı -->
+        <div class="product-card">
+          <img src="./assest/image/pc1.webp" alt="Product 1">
+          <h3>BLACK LACE HEELS</h3>
+          <p class="price">$189.00 <span class="old-price">$210.00</span></p>
+        </div>
+        <div class="product-card">
+          <img src="./assest/image/pc2.webp" alt="Product 2">
+          <h3>BLACK LACE HEELS</h3>
+          <p class="price">$189.00 <span class="old-price">$210.00</span></p>
+        </div>
+        <!-- Ek ürün kartları -->
+        <div class="product-card">
+          <img src="./assest/image/pc3.webp" alt="Product 3">
+          <h3>BLACK LACE HEELS</h3>
+          <p class="price">$189.00 <span class="old-price">$210.00</span></p>
+        </div>
+        <div class="product-card">
+          <img src="./assest/image/pc4.webp" alt="Product 4">
+          <h3>BLACK LACE HEELS</h3>
+          <p class="price">$189.00 <span class="old-price">$210.00</span></p>
+        </div>
+        <div class="product-card">
+          <img src="./assest/image/pc5.webp" alt="Product 5">
+          <h3>BLACK LACE HEELS</h3>
+          <p class="price">$189.00 <span class="old-price">$210.00</span></p>
+        </div>
+        <div class="product-card">
+          <img src="./assest/image/pc6.webp" alt="Product 6">
+          <h3>BLACK LACE HEELS</h3>
+          <p class="price">$189.00 <span class="old-price">$210.00</span></p>
+        </div>
+        <div class="product-card">
+          <img src="./assest/image/pc7.webp" alt="Product 7">
+          <h3>BLACK LACE HEELS</h3>
+          <p class="price">$189.00 <span class="old-price">$210.00</span></p>
+        </div><div class="product-card">
+          <img src="./assest/image/pc8.webp" alt="Product 8">
+          <h3 >BLACK LACE HEELS</h3>
+          <p class="price">$189.00 <span class="old-price">$210.00</span></p>
+        </div><div class="product-card">
+          <img src="./assest/image/pc9.webp" alt="Product 9">
+          <h3>BLACK LACE HEELS</h3>
+          <p class="price">$189.00 <span class="old-price">$210.00</span></p>
+        </div>
+      </div>
+  
+      <!-- Black Friday afişi -->
+      <div class="black-friday-banner">
+        <img src="./assest/image/grid 3.webp" alt="Black Friday Sale">
+      </div>
+    </div>
+  </div>
+  
+  
+
+
+
+
+
+
+
+
+
+
+
 
     <footer class="footer">
       <div class="containerr">

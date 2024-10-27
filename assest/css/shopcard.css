@@ -51,6 +51,242 @@ header{
  .dropdown-toggle::after {
      display: none !important;
  }
+
+
+ .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+
+  .cart-header, .cart-item, .cart-footer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .cart-header {
+    font-weight: bold;
+  }
+
+  .cart-item img {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  .cart-item {
+    align-items: flex-start;
+  }
+
+  .cart-item-info {
+    flex: 1;
+  }
+
+  .cart-item-info p {
+    margin-bottom: 5px;
+  }
+
+  .cart-item-price, .cart-item-quantity, .cart-item-total {
+    text-align: center;
+    width: 100px;
+  }
+
+  /* Quantity Input */
+  .quantity-input {
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  /* Buttons */
+  .cart-footer {
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .btn-update {
+    background-color: #007bff;
+  }
+
+  .btn-apply {
+    background: linear-gradient(to right, #ff7f00, #ffbb33);
+  }
+
+  .btn-close {
+    background-color: #666;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .cart-header, .cart-item, .cart-footer {
+      flex-direction: column;
+      text-align: center;
+    }
+}
+
+    .cart-item img {
+      margin: 0 auto 10px;
+    }
+
+    .cart-item-info, .cart-item-price, .cart-item-quantity, .cart-item-total {
+      width: 100%;
+    }
+
+
+
+
+
+
+    .containerc {
+        width: 90%;
+        max-width: 1200px;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+      }
+
+
+    .summary-section {
+        
+       
+        margin-top: 20px;
+        padding: 20px;
+        border-top: 1px solid #ddd;
+
+      }
+    
+      .summary-item {
+        width: 48%;
+      }
+    .subtotal{
+        display: flex;
+        align-items: center;
+        height: 100px; 
+        align-content: center;
+        gap: 20px;
+        
+    }
+      .summary-item h2 {
+        margin-bottom: 15px;
+        font-size: 18px;
+        
+      }
+    
+      .subtotal, .shipping-options {
+        margin-bottom: 15px;
+      }
+    
+      .subtotal p {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 5px 0;
+      }
+    
+      .shipping-options label {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+    
+      .shipping-options input[type="radio"] {
+        margin-right: 10px;
+      }
+    
+      /* Shipping Calculation Form */
+      .calculate-shipping {
+        margin-top: 20px;
+      }
+    
+      .calculate-shipping h3 {
+        cursor: pointer;
+        color: #666;
+        font-weight: bold;
+        font-size: 16px;
+        display: inline-block;
+      }
+    
+      .calculate-shipping form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+      }
+    
+      .calculate-shipping select, .calculate-shipping input[type="text"] {
+        padding: 8px;
+        margin: 5px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f1f1f1;
+        color: #333;
+      }
+    
+      .btn-update-details {
+        padding: 10px 20px;
+        border: none;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        background-color: #666;
+        border-radius: 5px;
+      }
+    
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .summary-section {
+          flex-direction: column;
+        }
+        
+        .summary-item {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
 .footer {
     background-color: #333;
