@@ -55,10 +55,135 @@ header{
  
 
 
- 
+ .card-container {
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px auto;
+    gap: 50px;
+}
+.card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    padding: 0 auto;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card-overlay {
+    position: absolute;
+    
+    
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+.card-overlay h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.card-overlay p {
+    font-size: 0.9em;
+}
+.card-overlay:hover {
+    background-color: #f0a500;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* Kart Arka Plan Resimleri */
+.card1 { background-image: url(../image/blog1.webp); }
+.card2 { background-image: url(../image/blog2.webp); }
+.card3 { background-image: url(../image/blog3.webp); }
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        max-width: 100%;
+    }
+}
 
 
+.blog-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 90%;
+    max-width: 1200px;
+}
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+.blog-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+.blog-content {
+    padding: 20px;
+}
+.blog-meta {
+    display: flex;
+    gap: 10px;
+    font-size: 0.8em;
+    color: #666;
+    margin-bottom: 10px;
+}
+.blog-meta span {
+    color: #f0a500;
+}
+.blog-title {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.blog-description {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 20px;
+}
+.view-more {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #333;
+    color: #333;
+    font-size: 0.9em;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.view-more:hover {
+    background-color: #333;
+    color: #fff;
+}
 
+/* Kart Arka Plan Resimleri */
+.blog1 { background-image: url('https://via.placeholder.com/300x200?text=Blog+1'); }
+.blog2 { background-image: url('https://via.placeholder.com/300x200?text=Blog+2'); }
+.blog3 { background-image: url('https://via.placeholder.com/300x200?text=Blog+3'); }
+.blog4 { background-image: url('https://via.placeholder.com/300x200?text=Blog+4'); }
+.blog5 { background-image: url('https://via.placeholder.com/300x200?text=Blog+5'); }
 
 
 

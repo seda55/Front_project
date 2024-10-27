@@ -229,7 +229,18 @@ main {
     margin: 0 auto; /* Ortalar */
     padding: 20px; /* İçerik etrafında boşluk */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+
+}
+ img:hover{
+ filter: brightness(0.5);
+ transition: all 0.2s;
+
+}
+.grid-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .custom-row {
@@ -268,23 +279,23 @@ main {
 /* Responsive adjustments */
 @media (min-width: 768px) {
     .large-col {
-        flex: 0 0 calc(66.67% - 10px); /* 2/3 width for large screens */
+        flex: 0 0 calc(66.67% - 10px); 
     }
     .small-col {
-        flex: 0 0 calc(33.33% - 10px); /* 1/3 width for large screens */
+        flex: 0 0 calc(33.33% - 10px); 
     }
     .side-col {
-        flex: 0 0 33.33%; /* 1/3 width for large screens */
+        flex: 0 0 33.33%; 
     }
 }
 
 @media (max-width: 767px) {
     .main-col-lg, .side-col {
-        flex: 0 0 100%; /* Full width on mobile */
+        flex: 0 0 100%; 
         max-width: 100%;
     }
     .large-col, .small-col {
-        flex: 0 0 100%; /* Full width on mobile */
+        flex: 0 0 100%; 
         max-width: 100%;
     }
 }
@@ -295,7 +306,7 @@ main {
     }
     
     .card {
-      max-width: 100%; /* Make cards take full width on smaller screens */
+      max-width: 100%; 
     }
   }
 
@@ -309,7 +320,6 @@ main {
     font-family: Arial, sans-serif;
 }
 
-/* Countdown section styling */
 .deal-countdown {
     color: white;
     text-align: center;
