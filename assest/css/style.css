@@ -229,7 +229,7 @@ main {
     margin: 0 auto; /* Ortalar */
     padding: 20px; /* İçerik etrafında boşluk */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
 }
  img:hover{
