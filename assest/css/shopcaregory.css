@@ -253,7 +253,7 @@ div.color {
 
 .products {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Üç sütun yapısı */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
     flex: 3;
 }
@@ -293,7 +293,6 @@ div.color {
     margin-left: 10px;
 }
 
-/* Black Friday Afişi */
 .black-friday-banner {
     flex: 1;
     display: flex;
@@ -309,7 +308,7 @@ div.color {
 /* Responsive Ayarları */
 @media (max-width: 992px) {
     .products {
-        grid-template-columns: repeat(2, 1fr); /* Orta ekranlarda iki sütun */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
@@ -320,7 +319,7 @@ div.color {
     }
 
     .products {
-        grid-template-columns: 1fr; /* Küçük ekranlarda tek sütun */
+        grid-template-columns: 1fr; 
     }
 
     .black-friday-banner {
@@ -356,7 +355,6 @@ div.color {
     border: none;
 }
 
-/* Düyməyə basıldığında arxa fonu dəyişir */
 .add-to-bag-btn:active {
     background-color: #ff9800;
     color: white;
@@ -366,9 +364,9 @@ div.color {
     background-color: #ff9800;
     color: white;
     transform: scale(1.2);
-    outline: none; /* Fokus effektini göstərmək istəmirsinizsə */
+    outline: none; 
 }
-/* Başlanğıcda mətn gizlidir */
+
 .label {
     display: none;
     margin-left: 10px;
@@ -378,7 +376,7 @@ div.color {
     transition: opacity 0.7s;
 }
 
-/* Düyməyə basıldığında mətni göstərir */
+
 .add-to-bag-btn:active + .label {
     display: inline;
     opacity: 1;

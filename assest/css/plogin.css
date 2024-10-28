@@ -51,7 +51,11 @@ header{
  .dropdown-toggle::after {
      display: none !important;
  }
- 
+ .text{
+    margin-left:700px;
+    margin-top: 200px;
+    color: white;
+}
 
 
 
@@ -68,7 +72,6 @@ header{
     height: 700px;
 }
 
-/* Sol tərəf */
 .left-panel {
     background-image: url(../image/BLOG.webp);
     background-size: cover;
@@ -108,7 +111,6 @@ header{
     background-color: #e68900;
 }
 
-/* Sağ tərəf */
 .right-panel {
     flex: 1;
     padding: 40px;

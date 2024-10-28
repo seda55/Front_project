@@ -43,7 +43,11 @@ header{
      background-color: orange !important;
      color: white !important;
  }
-
+ .text{
+    margin-left:700px;
+    margin-top: 200px;
+    color: white;
+}
 
 
  .container {
@@ -199,7 +203,6 @@ header{
     background-color: #f3f3f3;
   }
 
-  /* Aktif sekme için stil */
   .tab-navbar .active {
     background: linear-gradient(to right, #ff7f00, #ffbb33);
     color: #fff;
@@ -353,7 +356,7 @@ margin-left: 300px;
 
 .products {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Üç sütun yapısı */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
     flex: 3;
 }
@@ -393,7 +396,6 @@ margin-left: 300px;
     margin-left: 10px;
 }
 
-/* Black Friday Afişi */
 .black-friday-banner {
     flex: 1;
     display: flex;
@@ -406,10 +408,9 @@ margin-left: 300px;
     border-radius: 8px;
 }
 
-/* Responsive Ayarları */
 @media (max-width: 992px) {
     .products {
-        grid-template-columns: repeat(2, 1fr); /* Orta ekranlarda iki sütun */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
@@ -420,7 +421,7 @@ margin-left: 300px;
     }
 
     .products {
-        grid-template-columns: 1fr; /* Küçük ekranlarda tek sütun */
+        grid-template-columns: 1fr; 
     }
 
     .black-friday-banner {

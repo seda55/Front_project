@@ -52,13 +52,17 @@ header{
      display: none !important;
  }
 
-
+ .text{
+    margin-left:700px;
+    margin-top: 200px;
+    color: white;
+}
 
  .map-container {
     width: 90%;
     max-width: 1200px;
     height: 0;
-    padding-bottom: 50%; /* Aspect Ratio için */
+    padding-bottom: 50%;
     position: relative;
     background-color: #e0e0e0;
     overflow: hidden;
@@ -67,7 +71,6 @@ header{
     margin: 0 auto;
   }
 
-  /* Harita Görseli */
   .map-container iframe {
     position: absolute;
     top: 0;
@@ -90,7 +93,6 @@ header{
     margin: 0 auto;
 }
 
-/* Sol Bilgi Bölümü */
 .contact-info {
     flex: 1;
     background-color: #f7f7f7;
@@ -114,7 +116,6 @@ header{
     margin-right: 10px;
 }
 
-/* Sağ Form Bölümü */
 .contact-form {
     flex: 2;
     padding: 30px;
@@ -142,7 +143,6 @@ header{
     background-color: #e59400;
 }
 
-/* Responsive Tasarım */
 @media (max-width: 768px) {
     .contact-container {
         flex-direction: column;

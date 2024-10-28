@@ -53,7 +53,11 @@ header{
      display: none !important;
  }
  
-
+.text{
+    margin-left:700px;
+    margin-top: 200px;
+    color: white;
+}
 
  .card-container {
     display: flex;
@@ -105,12 +109,11 @@ header{
     border-radius: 4px;
 }
 
-/* Kart Arka Plan Resimleri */
+
 .card1 { background-image: url(../image/blog1.webp); }
 .card2 { background-image: url(../image/blog2.webp); }
 .card3 { background-image: url(../image/blog3.webp); }
 
-/* Responsive Tasarım */
 @media (max-width: 768px) {
     .card {
         width: 100%;
@@ -125,7 +128,6 @@ header{
 
     width: 70%;
     max-width: 500px;
-    margin:  10px auto;
 
 }
 .blog-card {
@@ -180,12 +182,7 @@ header{
     color: #fff;
 }
 
-/* Kart Arka Plan Resimleri */
-.blog1 { background-image: url('https://via.placeholder.com/300x200?text=Blog+1'); }
-.blog2 { background-image: url('https://via.placeholder.com/300x200?text=Blog+2'); }
-.blog3 { background-image: url('https://via.placeholder.com/300x200?text=Blog+3'); }
-.blog4 { background-image: url('https://via.placeholder.com/300x200?text=Blog+4'); }
-.blog5 { background-image: url('https://via.placeholder.com/300x200?text=Blog+5'); }
+
 
 
 .pagination {
@@ -230,19 +227,248 @@ header{
 }
 
 
+.sidebar {
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: #ffc107;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.search-bar input {
+    border: none;
+    background: none;
+    outline: none;
+    color: #fff;
+    flex: 1;
+    margin-left: 10px;
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 10px;
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0 5px;
+}
+
+.profile-title {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 1.2em;
+}
+
+.profile-description {
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.popular-posts {
+    background-color: #ffc107;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 4px;
+}
+
+
+main{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+}
+.post-list {
+    list-style: none;
+    margin-top: 50px;
+}
+
+.post-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.post-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.post-content {
+    text-align: left;
+}
+
+.post-title {
+    font-size: 1em;
+    color: #333;
+    font-weight: bold;
+}
+
+.post-time {
+    font-size: 0.8em;
+    color: #777;
+}
 
 
 
+.ad-space {
+    background-color: #eaeaea;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 1em;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.categories {
+    margin-top: 20px;
+}
+.categories h2 {
+    background-color: #f0a500;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.category-list {
+    list-style: none;
+}
+.category-list li:hover{
+    color: #f0a500;
+}
+.category-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px dotted #ccc;
+    font-size: 1em;
+    color: #666;
+}
+.category-list li:last-child {
+    border-bottom: none;
+}
+
+.section-title {
+    background-color: #ffc107;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    margin: 0 0 15px 0;
+    font-size: 18px;
+}
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.newsletter p {
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.newsletter-form input[type="email"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    margin: 0 auto;
+}
+
+.newsletter-form button {
+    padding: 8px 10px;
+    background-color: #ffc107;
+    color: #ffffff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.newsletter small {
+    font-size: 12px;
+    color: #666666;
+    text-align: center;
+    display: block;
+    margin-top: 5px;
+}
+
+.tag-clouds .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.tag-clouds .tags span {
+    background-color: #eeeeee;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    color: #333333;
+    cursor: pointer;
+}
 
 
-
-
-
-
-
-
-
-
+.tag-clouds .tags span:hover{
+    background-color: #ff9800;
+}
 
 
 
